@@ -1,0 +1,101 @@
+html {
+  background: #3b92d1;
+}
+
+.header {
+  display: flex;
+  margin: 0;
+  border-radius: 30px;
+}
+
+.header h1 {
+  display: grid;
+  color: #0a3871;
+  align-items: center;
+  justify-items: start;
+  margin: 0 0 25px 100px;
+  font-size: 90px;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.input-texto {
+  border-radius: 10px;
+  color: #2977b0;
+  max-height: 236px;
+  min-height: 236px;
+  max-width: 600px;
+  min-width: 605px;
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+.mensaje {
+  
+  font-size: 20px;
+  border-radius: 10px;
+  color: #2977b0;
+  max-height: 100px;
+  min-height: 450px;
+  max-width: 100px;
+  min-width: 230px;
+  margin: 0 0 0 30px;
+  background-image: url("/imagenes/Muñeco.png");
+  background-size: 200px 425px;
+}
+
+.botones p {
+  justify-items: start;
+  margin: 0 0 5px;
+  color: #b8d6f5;
+  cursor:help;
+}
+
+.button {
+  background: #315db5;
+  color: #ffffff;
+  width: 300px;
+  height: 67px;
+  border-radius: 24px;
+  font-size: 16px;
+  margin: 2px;
+}
+
+.button:hover {
+  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px #5f9de77a;
+  transition: 0.2s;
+}
+
+.button:active {
+  background: #3b60d1;
+}
+
+.box2 {
+  align-content: space-between;
+  background-color: #3b6dd1;
+  box-shadow: 0px 24px 32px -8px #00000014;
+  border-radius: 32px;
+  width: 300px;
+  align-items: center;
+}
+
+.box2 p{
+  font-size:small;
+  color:#0a3871;
+  text-align: center;
+  position: relative;
+  right: 2px;
+  bottom: 55px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 30px;
+  color: #0f161b;
+}

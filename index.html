@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador-De-Texto</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>a</h1>
+    </header>
+    <main class="contenedor">
+      <section class="box">
+        <textarea class="input-texto" name="texto" cols="50" rows="10" placeholder="Ingrese un mensaje"></textarea>
+        <div class="botones">
+          <p>&#33; solo letras minusculas y sin acentos</p>
+          <button class="button" id="b1" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+          <button class="button" id="b2" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="box2">
+        <textarea class="mensaje" name="texto" cols="30" rows="26"></textarea>
+        <p class="parrafo">no se ha encontrado ningún mensaje</p>
+        <button class="button" id="b3" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
+    <script src="index.js"></script>
+    <footer class="footer">
+      <p>&copy; Copyright Encriptador de texto - 2022</p>
+    </footer>
+  </body>
+</html>
