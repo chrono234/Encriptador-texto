@@ -34,6 +34,7 @@ function encriptar(stringEncriptada) {
 function btnDesencriptar() {
   const textoEncriptado = desencriptar(InputTexto.value);
   mensaje.value = textoEncriptado;
+  parrafo.style.display = "none";
   InputTexto.value = "";
 }
 
