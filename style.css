@@ -103,3 +103,12 @@ header {
   margin-top: 30px;
   color: #0f161b;
 }
+
+.linkedin, .github{
+  margin: 0 0 10px 10px;
+  color: #000000;
+}
+
+.linkedin:hover, .github:hover{
+  color: white;
+}
