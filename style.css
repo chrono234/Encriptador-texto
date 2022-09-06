@@ -1,12 +1,17 @@
 html {
   background: #3b92d1;
+  }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 70px;
 }
 
-.header {
-  display: flex;
-  margin: 0;
-  border-radius: 30px;
-}
+.logo{
+  margin: 0 0 0 60px;
+  }
 
 .header h1 {
   display: grid;
@@ -35,17 +40,16 @@ html {
 }
 
 .mensaje {
-  
   font-size: 20px;
   border-radius: 10px;
   color: #2977b0;
   max-height: 100px;
-  min-height: 450px;
+  min-height: 360px;
   max-width: 100px;
   min-width: 230px;
   margin: 0 0 0 30px;
-  background-image: url("/imagenes/Muñeco.png");
-  background-size: 200px 425px;
+  background-image: url("imagenes/Muñeco.png");
+  background-size: 200px 342px;
 }
 
 .botones p {

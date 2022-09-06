@@ -32,8 +32,9 @@ function encriptar(stringEncriptada) {
 }
 
 function btnDesencriptar() {
-  const textoEncriptado = desencriptar(InputTexto.value);
-  mensaje.value = textoEncriptado;
+  const textoDesencriptado = desencriptar(InputTexto.value);
+  mensaje.value = textoDesencriptado;
+  mensaje.style.backgroundImage = "none";
   parrafo.style.display = "none";
   InputTexto.value = "";
 }
@@ -62,5 +63,7 @@ function desencriptar(stringDesencriptada) {
 function copiar() {
   mensaje.select();
   navigator.clipboard.writeText(mensaje.value);
+  mensaje.style.backgroundImage = "none";
+  parrafo.style.display = "none";
   mensaje.value = "";
 }
