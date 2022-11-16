@@ -1,10 +1,30 @@
-### Hi there 👋
 
-- 🔭 I’m currently working on different challenges to become more familiar with the knowledge that I am learnig and take advantage of the learning process doing them
+# Text-encryter
 
 In this project the goal is create an encriptator that can encrypt and decript a simple text and also create the functions in javascript that can make this happens.
 
-I learned more from git, javascript, css, html with this project.
+The technologies used:
 
-challengeonecodificador3
+CSS,
+HTML5,
+Javascript,
+Git
+
+
+## Acknowledgements
+
+ - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
+ - [Oracle](https://www.oracle.com/mx/education/oracle-next-education/)
+ - [Alura-LATAM](https://www.aluracursos.com/)
+
+## Authors
+
+- [chrono234](https://github.com/chrono234)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at jaiorozco@hotmail.com
+
 
