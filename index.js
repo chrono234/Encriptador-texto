@@ -1,14 +1,9 @@
-const InputTexto = document.querySelector(".input-texto");
-const mensaje = document.querySelector(".mensaje");
-const parrafo = document.querySelector(".parrafo")
-
-function btnEncriptar() {
-  const textoEncriptado = encriptar(InputTexto.value);
-  mensaje.value = textoEncriptado;
-  mensaje.style.backgroundImage = "none";
-  parrafo.style.display = "none";
-  InputTexto.value = "";
-}
+const inputTexto = document.querySelector("[input-texto]");
+const mensaje = document.querySelector("[mensaje]");
+const parrafo = document.querySelector("[parrafo]");
+const btnEncriptar = document.querySelector("[btn-encriptar]");
+const btnDesencriptar = document.querySelector("[btn-desencriptar]");
+const btnCopiar = document.querySelector("[btn-copiar]");
 
 function encriptar(stringEncriptada) {
   let matrizCodigo = [
@@ -29,14 +24,6 @@ function encriptar(stringEncriptada) {
     }
   }
   return stringEncriptada;
-}
-
-function btnDesencriptar() {
-  const textoDesencriptado = desencriptar(InputTexto.value);
-  mensaje.value = textoDesencriptado;
-  mensaje.style.backgroundImage = "none";
-  parrafo.style.display = "none";
-  InputTexto.value = "";
 }
 
 function desencriptar(stringDesencriptada) {
@@ -60,10 +47,26 @@ function desencriptar(stringDesencriptada) {
   return stringDesencriptada;
 }
 
-function copiar() {
+  btnEncriptar.addEventListener("click", () => {
+  const textoEncriptado = encriptar(inputTexto.value);
+  mensaje.value = textoEncriptado;
+  mensaje.style.backgroundImage = "none";
+  parrafo.style.display = "none";
+  inputTexto.value = "";
+});
+
+  btnDesencriptar.addEventListener("click", () => {
+  const textoDesencriptado = desencriptar(inputTexto.value);
+  mensaje.value = textoDesencriptado;
+  mensaje.style.backgroundImage = "none";
+  parrafo.style.display = "none";
+  inputTexto.value = "";
+});
+
+btnCopiar.addEventListener("click", () => {
   mensaje.select();
   navigator.clipboard.writeText(mensaje.value);
   mensaje.style.backgroundImage = "none";
   parrafo.style.display = "none";
   mensaje.value = "";
-}
+});
